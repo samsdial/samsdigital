@@ -9,7 +9,7 @@ class MovieShowingSchema extends Schema {
       table.integer('cinema_id').unsigned();
       table.foreign('cinema_id').references('cinemas.id');
       table.integer('movie_id').unsigned();
-      table.foreign('movie_id').references('movie.id');
+      table.foreign('movie_id').references('movies.id');
       table.integer('room_id').unsigned();
       table.foreign('room_id').references('rooms.id');
       table.date('movie_show_date');

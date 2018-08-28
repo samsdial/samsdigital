@@ -6,7 +6,7 @@ class GenreSchema extends Schema {
   up () {
     this.create('genres', (table) => {
       table.increments();
-        table.string('genre_name', 100);
+      table.string('genre_name', 100);
     })
   }
 
